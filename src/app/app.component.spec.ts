@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'cocheArtifactSpringBootFrontEnd' title`, () => {
+  it(`should have the 'Palabras nuevas en esto' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cocheArtifactSpringBootFrontEnd');
+    expect(app.title).toEqual('Palabras nuevas en esto');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, cocheArtifactSpringBootFrontEnd');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Palabras nuevas en esto');
   });
 });
